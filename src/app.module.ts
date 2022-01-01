@@ -1,10 +1,10 @@
+import { CharacterUseCase } from './application/usecases/characterUseCase';
+import { CharacterController } from './presentation/controllers/character.controller';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 
 @Module({
   imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [CharacterController],
+  providers: [CharacterUseCase],
 })
 export class AppModule {}
